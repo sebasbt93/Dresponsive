@@ -1,0 +1,303 @@
+h1 {
+  font-size:50px;
+  color:blue;
+  text-align:center;
+}
+nav {
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  min-height: 8vh;
+  background-color:lightblue;
+}
+
+.enlaces-menu {
+  display:flex;
+  padding:0;
+}
+.enlaces-menu li{
+  padding: 0 40px;
+  list-style-type:none;
+}
+.enlaces-menu li a{
+  text-decoration:none;
+  font-size: 1.8rem;
+  color:black;
+  font-weight:600;
+}
+.enlaces-menu li:hover{
+  background-color:orange;
+}
+.fondo1 {
+  width:1332px;
+}
+.galeria {
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  cursor:pointer;
+  object-fit: cover;
+  filter: brightness(80%);
+  
+  
+  
+}
+.galeria:hover {
+  filter: brightness(110%);
+}
+.flex_galeria {
+  width:300px;
+   border:2px solid black;
+  margin-top:20px;
+ 
+}
+.seccion1 {
+  position:relative;
+  top:20px;
+    
+  
+}
+.parrafo {
+  position:absolute;
+  bottom:200px;
+  color:white;
+  width:350px;
+  left:50px;  
+  
+}
+.boton {
+  position:absolute;
+  bottom:50px;
+  width:140px;
+  height:80px;
+  right:80px;
+  cursor:pointer;
+  color:white;
+  background:green;
+  font-size:25px;
+  filter: brightness(120%);
+}
+.boton:hover {
+  filter: brightness(150%);
+}
+.articulos {
+  line-height: 1.5em;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 50px;
+}
+.float {
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: 0px 0px 10px 2px #aaa;
+}
+
+.float:hover {
+    opacity: 0.8;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+p {
+    margin: 20px;
+    text-align: justify;
+}
+
+/*p::first-letter {
+    font-size: 110px;
+    font-family: 'Crimson Text', serif;
+    float: left;
+    line-height: 1;
+    color: red;
+}
+
+p::first-line {
+    color: red;
+}
+
+
+
+p::selection {
+    color: white;
+    background-color: red;
+}*/
+.clear-fix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+table{
+  width:720px;
+  margin:0 auto;
+  color:white;
+  text-align:center;
+}
+tr{
+  cursor:pointer;
+}
+.destacado{
+  font-family:Arial;
+  font-weight:bold;
+  background-color:#0D6859;
+}
+
+
+
+table tr:nth-child(odd){
+  background-color:black;
+}
+
+table tr:nth-child(odd):hover{
+  color:black;
+  background-color:orange;
+}
+
+table tr:nth-child(even){
+  background-color:black;
+}
+
+table tr:nth-child(even):hover{
+  color:black;
+  background-color:orange;
+}
+footer {
+  text-align: center;
+  background:grey;
+  margin-top:20px;
+  
+}
+@media only screen and (min-width:320px) and (max-width: 540px){
+  h1 {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+  }
+  nav {
+    
+    width: 480px;
+  }
+  .enlaces-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .enlaces-menu li a {
+    font-size: 15px;
+  }
+  nav a{
+    display: flex;
+    flex-direction: column;
+      }
+  .fondo1 {
+    width: 480px;
+    
+  }
+  .flex_galeria {
+
+    width: 480px;
+
+  }
+  .fondo2 {
+    width: 480px;
+  }
+  .parrafo {
+    font-size: 8px;
+    bottom: 37px;
+    left: 8px;
+    width: 150px;
+  }
+  .boton {
+    width: 60px;
+    height: 45px;
+    font-size: 14px;
+    bottom: 10px;
+  }
+  .articulos {
+    width: 400px;
+    margin-left: 5px;
+  }
+  table {
+    width: 200px;
+  }
+}
+@media only screen and (min-width:541px) and (max-width: 1024px){
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    color: green;
+  }
+  nav {
+    
+    width: 800px;
+  }
+  .enlaces-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .enlaces-menu li a {
+    font-size: 25px;
+  }
+  nav a{
+    display: flex;
+    flex-direction: column;
+      }
+      .flex_galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 350px;
+  }
+  .parrafo {
+    font-size: 8px;
+    bottom: 37px;
+    left: 8px;
+    width: 150px;
+  }
+  .boton {
+    width: 60px;
+    height: 45px;
+    font-size: 14px;
+    bottom: 10px;
+  
+    width: 485px;
+  }
+  .fondo1 {
+    width: 100%;
+    /*height: 250px;*/
+  }
+  .fondo2 {
+    width: 100%;
+  }
+  .parrafo {
+    font-size: 13px;
+    bottom: 37px;
+    left: 8px;
+    width: 150px;
+  }
+  .boton {
+    width: 120px;
+    height: 55px;
+    font-size: 18px;
+    bottom: 10px;
+    right: 170px;
+  }
+  .articulos {
+    width: 700px;
+    margin-left: 55px;
+  }
+  .tabla {
+    width: 480px;
+  }
+}
+
+
+
